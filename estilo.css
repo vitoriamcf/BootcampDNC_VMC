@@ -1,20 +1,30 @@
+:root{
+    --azul-dnc: #0c70f2;
+    --preto-dnc: #303030;
+    --cinza-hover: #c9c9c9;
+    --fonte-padrao: 'inter';
+
+}
 
 body {
     margin: 0px;
-    padding: 0px;    
+    padding: 0px; 
+     
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030; */
+    background-repeat: no-repeat;
 }
 #principal {
     width: 100%;
     height: 100px;
     border: 1px solid black;
-    background-color: #303030;
+    background-color: var(--preto-dnc);
     display: flex;
     justify-content: space-between;
     align-items: center;
     
 }
     #principal div a {
-        font-family: 'Inter';
+        font-family: var(--fonte-padrao);
         font-style: normal;
         font-weight: 600;
         font-size: 25px;
@@ -27,25 +37,153 @@ body {
             color: blue;
     }
 
-#menu {
-    display: flex;
-    width: 45%;
-    justify-content: space-around;
-    align-items: center;
-    text-align: left;
-   
-}
-    #principal button {
-        margin-right: 5%;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 24px;
-        color: #FFFFFF;
-        background-color: #0C70F2;
-        border: 0px;
+    #menu {
+        display: flex;
+        width: 45%;
+        justify-content: space-around;
         align-items: center;
-        box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
-        cursor: pointer;
+        text-align: left;
+   
     }
+        #principal button {
+            margin-right: 5%;
+            font-family: var(--fonte-padrao);
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 24px;
+            color: #FFFFFF;
+            background-color: var(--azul-dnc);
+            border: 0px;
+            align-items: center;
+            box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
+            cursor: pointer;
+            }
+
+        #texteCenter {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 48px;
+            text-align: center;
+            color: #FFFFFF;
+            }
+
+        #titulo {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 50px;
+            line-height: 97px;
+            color: #FFFFFF;
+            }
+        form {
+            color: white;
+         }   
+    /* Seção Principal do Site*/
+
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+        header {
+            color: white;
+            font-family: inter;
+        }
+
+        header h1{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 650;
+            font-size: 60px;
+            line-height: 97px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        header h2{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 150;
+            font-size: 25px;
+            line-height: 35px;
+            text-align: center;
+            color: #FFFFFF;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        header .invert{
+            background-color: black;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        /* Formulário*/
+
+        form {
+            font-family: var(--fonte-padrao);
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 36px;
+            text-align: left;
+            width: 350px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        form input{
+            border-radius: 10px;
+            height: 25px;
+            border: none;
+            font-size: 15px;
+            padding: 5px;
+            background-color: rgba(255, 255, 255, 0.9);;
+        }
+
+        form label{
+            margin: 0px 0px 0px 0px;
+        }
+
+        form input::placeholder{
+            color #39393980;  
+        }
+
+        .checkbox-itens label {
+            font-size:  15px;
+        }
+
+        .checkbox-itens {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        input[type="checkbox"]{
+            transform: scale(1.0);
+        }
+
+        input[type="submit"]{
+            background: var(--azul-dnc);
+            box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
+            border-radius: 10px;
+            width: 350px;
+            height: 35px;
+            color: white;
+            font-size: 15px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
